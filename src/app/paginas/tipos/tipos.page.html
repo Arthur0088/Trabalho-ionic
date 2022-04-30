@@ -1,0 +1,9 @@
+<app-header titulo = "Tipos"></app-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let x of componenteSegundoNivel" [routerLink]="x.link" detail>
+    <ion-icon [name]= "x.icone"></ion-icon>
+    <ion-label>{{x.nome}}</ion-label>
+  </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,11 @@
+<app-header titulo="Esportes"></app-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let x of componentePrimeiroNivel" [routerLink]="x.link" detail>
+  <ion-icon [name]= "x.icone"></ion-icon>
+  <ion-label>{{x.nome}}</ion-label>
+</ion-item>
+</ion-list>
+<ion-button routerLink="/pagina-inicial">Voltar</ion-button>
+</ion-content>
